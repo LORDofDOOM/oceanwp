@@ -1,5 +1,23 @@
 # OceanWP Changelog
 
+### *2018.10.28* - 1.5.31:
+* **Fixed** - Product quantity on single product issue if the floating bar was activated.
+* **Fixed** - UL and OL lists CSS issue in single post.
+
+### *2018.10.26* - 1.5.30:
+* **Fixed** - Customizer preview issue.
+* **Tweak** - Don't recommend WPForms if WPForms Pro is activated.
+
+### *2018.10.23* - 1.5.29:
+* **Added** - LearnDash integration.
+* **Tweak** - Updated WooCommerce mini cart template.
+* **Tweak** - Checkbox CSS issue with Elementor.
+
+### *2018.10.08* - 1.5.28:
+* **Added** - Filter to allow you to change the heading for the sidebar titles.
+* **Fixed** - Floating bar issue on IOS.
+* **Fixed** - Styling issue with WPForms.
+
 ### *2018.09.04* - 1.5.27:
 * **Tweak** - Taxonomy description added before the content instead as subheading.
 * **Fixed** - Little issue in the elementor editor to make the text bold, italic, add a link, etc.. who was not selectable.

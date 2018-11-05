@@ -23,34 +23,17 @@ function oceanwp_tgmpa_register() {
 			'required'			=> false,
 			'force_activation'	=> false,
 		),
-		
-		array(
+
+	);
+
+	// If WPForms Pro is not active, recommend WPForms
+	if ( ! class_exists( 'WPForms_Pro' ) ) {
+		$plugins[] = array(
 			'name'				=> 'WPForms',
 			'slug'				=> 'wpforms-lite', 
 			'required'			=> false,
 			'force_activation'	=> false,
-		),
-		
-	);
-
-	// If WooCommerce
-	if ( class_exists( 'WooCommerce' ) ) {
-
-		// WooCommerce Wishlist plugin, because of free and premium version have different slugs we need to switch dynamically to avoid both version recommendation.
-		$wishlist_name = ( defined( 'TINVWL_LOAD_PREMIUM' ) ) ? 'ti-woocommerce-wishlist-premium' : 'ti-woocommerce-wishlist';
-		$plugins[]     = array(
-			'name'     => 'WooCommerce Wishlist',
-			'slug'     => $wishlist_name,
-			'required' => false,
 		);
-
-		// WooCommerce Variation Swatches
-		$plugins[]     = array(
-			'name'     => 'WooCommerce Variation Swatches',
-			'slug'     => 'woo-variation-swatches',
-			'required' => false,
-		);
-
 	}
 
 	// Register notice
